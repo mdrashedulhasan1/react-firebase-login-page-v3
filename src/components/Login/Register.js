@@ -31,7 +31,7 @@ const Register = () => {
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile({ displayName:data.name });
         alert('Updated profile');
-        navigate('/about')
+        navigate('/')
     }
     return (
         <div className='flex justify-center h-screen  items-center'>
